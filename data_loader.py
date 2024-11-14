@@ -3,10 +3,10 @@ import numpy as np
 import tensorflow as tf
 
 
-def load_images_and_labels(directory, img_height, img_width):
+def load_images_and_labels(directory, img_height, img_width, num_classes=101):
     images = []
     labels = []
-    class_names = sorted(os.listdir(directory))
+    class_names = sorted(os.listdir(directory))[-num_classes:]
     class_indices = {
         class_name: idx for idx, class_name in enumerate(class_names)
     }  # {name: index}
