@@ -7,11 +7,9 @@ from typing import Literal
 from sklearn.model_selection import train_test_split
 
 
-def mem_check():
+def mem_check(variables):
     def get_size(obj):
         return sys.getsizeof(obj)
-
-    variables = globals()
 
     sorted_vars = sorted(
         variables.items(), key=lambda item: get_size(item[1]), reverse=True
@@ -102,7 +100,7 @@ def augment_images(images, labels, class_names):
     balanced_labels = np.array(balanced_labels)
     balanced_images = balanced_images / 255.0  # normalize
 
-    mem_check()
+    mem_check(globals())
     print("Clearing memory...")
 
     del class_images
@@ -114,7 +112,7 @@ def augment_images(images, labels, class_names):
     del images
     del labels
     gc.collect()
-    mem_check()
+    mem_check(globals())
 
     return balanced_images, balanced_labels
 
