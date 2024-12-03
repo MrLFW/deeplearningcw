@@ -1,2 +1,11 @@
 SVC fitting took 31m 41s
 SVC prediction took 15m 11.5s
+
+CNN basic model took 4m 42.4s 34 epochs
+CNN basic model prediction took 1.1s
+
+CNN transfer model took 6m 3s 32 epochs
+CNN transfer model prediction took 3.6s
+
+CNN transfer model 2 took 7m 20.6s 38 epochs
+CNN transfer model 2 prediction took 3.4s
