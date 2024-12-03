@@ -1,0 +1,2 @@
+SVC fitting took 31m 41s
+SVC prediction took 15m 11.5s
