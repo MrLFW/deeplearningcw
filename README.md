@@ -1,15 +1,4 @@
-Name: Luke Wilson
-
-Module Code: CS3AM
-
-Assignment report Title: Image Classification Using Machine Learning on
-the Caltech 101 Dataset
-
-Coursework Date (when the work completed): 3/12/2024
-
-Actual hrs spent for the assignment: Probably around 60
-
-Convener Names: Dr. Muhammad Shahzad, Dr. Ferran Espuny Pujol
+# Image Classification Using Machine Learning on the Caltech 101 Dataset
 
 **<u>  
 </u>**
@@ -262,9 +251,6 @@ Model results comparison table:
 | Basic CNN | 4 minutes 42.4 seconds | 34 | 1.1 seconds | 12.58 | 2,126 |
 | First VGG16 CNN | 6 minutes 3 seconds | 32 | 3.6 seconds | 59.33 | 989 |
 | Second VGG16 CNN with added layers | 7 minutes 20.6 seconds | 38 | 3.4 seconds | 69.40 | 744 |
-
-Colour Key: Worst = Red \| OK = Orange \| Better = Yellow \| Best =
-Green
 
 The SVM definitely proved to be the worst as it had the slowest training
 time and also a low accuracy score. The epoch time in seconds can vary
